@@ -90,7 +90,7 @@ public boolean onNavigationItemSelected(MenuItem item) {
         } else if (id == R.id.nav_leaderboard) {
 
         } else if (id == R.id.nav_share) {
-        Intent intent = new Intent ( packageContent this, Share.class);
+        Intent intent = new Intent ( this, Share.class);
         drawer.closeDrawers();
         startActivity(intent);
 

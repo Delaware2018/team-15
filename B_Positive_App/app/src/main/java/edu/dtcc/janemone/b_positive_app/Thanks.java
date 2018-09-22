@@ -45,7 +45,7 @@ public class Thanks extends AppCompatActivity
 
 
     public void thanksButton(View v){
-        startActivity(new Intent(Thanks.this, activity_leader.class));
+        startActivity(new Intent(Thanks.this, leaderActivity.class));
     }
 
     @Override

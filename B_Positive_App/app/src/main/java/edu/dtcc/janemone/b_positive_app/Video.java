@@ -41,7 +41,7 @@ public class Video extends AppCompatActivity
         } else {
             super.onBackPressed();
         }
-    
+
     }
 
     public void thanksButton(View v){

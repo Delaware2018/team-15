@@ -1,9 +1,11 @@
 <!DOCTYPE html PUBLIC>
 <html lang= "en">
 <head>
+    <link href="styles.css" rel="Stylesheet" />
     <title>
         Survey
     </title>
+
 </head>
 
 <body>
@@ -15,22 +17,37 @@
         Age:<br>
         <input type="text" age="age">
     </form>
-<label>Gender: <span class="req"></span></label><br>
+    <label>Gender: <span class="req"></span></label><br>
     <select>
-        
-        
         <option value="male">Male</option>
         <option value="female">Female</option>
         <option value="other">Other</option>
+    </select><br>
+    <label>Would you share on social media? <span class="req"></span></label><br>
+    <select>
+        <option value="Yes">Yes</option><br>
+        <option value="No">No</option><br>
     </select>
     <form>
         
-        How did you hear about Be Positive?<br>
-        <input type="text" how="How did you hear about Be Positive?"><br>
+        
+        
+    <label>How did you hear about Be Positive? <span class="req"></span></label><br>
+    <select>
+        <option value="Family">Family Member</option><br>
+        <option value="Web">Our Web Site</option><br>
+        <option value="Event">One of our Events</option><br>
+        <option value="TV">Television/Social Media</option><br>
+        <option value="Other">other</option><br>
+    </select><br>
         Would you like to sign up for our newsletter?<br>
         <input type="text" news="Would you like to sign up for our newsletter?"><br>
     </form>
-
+    <section class="cf last" id="button-block">
+				<div style="width: 100%; text-align: center;">
+					<input type="submit" value="SUBMIT" name="submit" id="submit" class="submit-button" />
+				</div>
+			</section>
 
 </body> 
 

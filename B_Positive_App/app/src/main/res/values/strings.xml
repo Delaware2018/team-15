@@ -6,4 +6,83 @@
     <string name="nav_header_subtitle"></string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="about_us">1. Provide financial assistance to families of children with cancer
+        We have helped thousands of families across the country — financially and emotionally — as they care for their child with cancer.
+        Through The B+ Family Assistance Program, The B+ Foundation® is the largest provider of financial assistance to families of kids with cancer in the United States.\n
+        \n2.Fund research to find cures for childhood cancers and advancements in treatment protocols
+        The B+ Foundation® has provided research grants to institutions all over the country such as St. Jude Children’s Research Hospital (TN), Dana-Farber Cancer Institute (MA), Seattle Children’s Hospital (WA), Children’s Oncology Group, and the Nemours Center for Childhood Cancer Research (DE).
+        With your support, there are children and teens alive today due to research funded in part by The B+ Foundation®.\n
+        \n3. Increase awareness of childhood cancer and advocate for increased research funds
+        Sadly, less than 4% of the federal government’s cancer research budget is used for childhood cancer research.
+        The B+ Foundation® helped create the Coalition Against Childhood Cancer and is honored to be a member of the Alliance for Childhood Cancer to advocate for more government funds.\n
+        \n4. Spread the B+ message!
+        As it says on B+ T-shirts, “It’s not a grade. It’s an attitude.” By spreading the B+ (Be Positive) message through outreach efforts and talks, we share the lessons that Andrew taught us: have fun, set goals and try your best, show affection, and be comfortable with yourself.
+        We all need to “Live Like Andrew.”</string>
+
+    <string-array name="genders">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="ethnicity">
+        <item>Ethnicity</item>
+        <item>Caucasian</item>
+        <item>African American</item>
+        <item>Latino</item>
+        <item>Asian</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="sponsor_yes_no">
+        <item>Can you sponsor an event?</item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="social_yes_no">
+        <item>Would you share on social media?</item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+
+    <string-array name="news">
+        <item>Would you like monthly newsletter?</item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="hear">
+        <item>How did you hear about us?</item>
+        <item>Family member</item>
+        <item>Website</item>
+        <item>Event</item>
+        <item>TV</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="leaderboardNames">
+        <item>James</item>
+        <item>Laura</item>
+        <item>Eliott</item>
+        <item>Alex</item>
+        <item>Katie</item>
+        <item>Steven</item>
+        <item>Tom</item>
+        <item>Ellie</item>
+    </string-array>
+
+    <string-array name="donations">
+        <item>$1000</item>
+        <item>$800</item>
+        <item>$600</item>
+        <item>$550</item>
+        <item>$450</item>
+        <item>$300</item>
+        <item>$200</item>
+        <item>$150</item>
+    </string-array>
+    <string name="title_activity_blank">blank</string>
 </resources>

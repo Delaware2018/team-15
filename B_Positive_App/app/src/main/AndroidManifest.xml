@@ -39,6 +39,12 @@
         />
 
         <activity
+            android:name=".leaderActivity"
+            android:label="B_Positive_App"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+
+        <activity
         android:name=".Thanks"
         android:label="B_Positive_App"
         android:theme="@style/AppTheme.NoActionBar"

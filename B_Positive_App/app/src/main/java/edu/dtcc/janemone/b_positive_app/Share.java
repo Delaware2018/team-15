@@ -39,11 +39,11 @@ protected void onCreate(Bundle savedInstanceState) {
 public void onBackPressed() {
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
-        drawer.closeDrawer(GravityCompat.START);
+                drawer.closeDrawer(GravityCompat.START);
         } else {
-        super.onBackPressed();
+                super.onBackPressed();
         }
-        }
+}
 
 @Override
 public boolean onCreateOptionsMenu(Menu menu) {
@@ -74,15 +74,20 @@ public boolean onNavigationItemSelected(MenuItem item) {
         int id = item.getItemId();
 
         if (id == R.id.nav_main) {
-        //
+                Intent intent = new Intent(this, MainActivity.class);
+                drawer.closeDrawers();
+                startActivity(intent);
         } else if (id == R.id.nav_video) {
 
         } else if (id == R.id.nav_donations) {
-        Intent intent = new Intent(this, Donation.class);
-        drawer.closeDrawers();
-        startActivity(intent);
+                Intent intent = new Intent(this, Donation.class);
+                drawer.closeDrawers();
+                startActivity(intent);
 
         } else if (id == R.id.nav_leaderboard) {
+                Intent intent = new Intent(this, leaderActivity.class);
+                drawer.closeDrawers();
+                startActivity(intent);
 
         } else if (id == R.id.nav_share) {
         Intent intent = new Intent ( this, Share.class);

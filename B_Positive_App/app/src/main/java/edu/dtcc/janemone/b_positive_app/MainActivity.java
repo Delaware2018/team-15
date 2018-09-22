@@ -85,8 +85,14 @@ public class MainActivity extends AppCompatActivity
             drawer.closeDrawers();
             startActivity(intent);
         } else if (id == R.id.nav_leaderboard) {
+            Intent intent = new Intent(this, leaderActivity.class);
+            drawer.closeDrawers();
+            startActivity(intent);
 
         } else if (id == R.id.nav_share) {
+            Intent intent = new Intent ( this, Share.class);
+            drawer.closeDrawers();
+            startActivity(intent);
 
         } else if (id == R.id.nav_aboutus){
             Intent intent = new Intent(this, AboutUs.class);

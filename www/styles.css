@@ -1,13 +1,13 @@
 ﻿html, body {
 }
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, h2, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, head, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, head, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     border: 0 none;
     font: inherit;
     margin: 0;
     padding: 0;
     vertical-align: baseline;
 }
-article, aside, details, figcaption, figure, footer, h2, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure, footer, head, hgroup, menu, nav, section {
     display: block;
 }
 ol, ul {
@@ -25,7 +25,7 @@ strong {
 }
 .cf {
 }
-div, section, h1, h2, h3, h4, h5, h6, p, ul, li, section, footer, input, select, textarea {
+div, section, h1, head, h3, h4, h5, h6, p, ul, li, section, footer, input, select, textarea {
     box-sizing: border-box;
 }
 form {
@@ -105,7 +105,7 @@ img {
 .right {
     float: right;
 }
-h2, h3, h4, h5 {
+head, h3, h4, h5 {
     color: #212121;
     font-weight: 700;
 }
@@ -116,7 +116,7 @@ h1 {
     line-height: 1em;
     margin-bottom: 3em;
 }
-h2 {
+head {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     font-size: 3.5em;
@@ -124,7 +124,7 @@ h2 {
 h3 {
     font-size: 1.125em;
 }
-h2, h3, h4, p, #content ul {
+head, h3, h4, p, #content ul {
     margin-bottom: 8pt;
 }
 a {
@@ -146,7 +146,7 @@ a:hover {
 }
 .logo-image {
 }
-h2 p {
+head p {
     width: 75.2406%;
 }
 .cart {
@@ -160,13 +160,13 @@ h2 p {
     font-size: 0.75em;
     font-style: italic;
 }
-h2 .content img {
+head .content img {
     border: 8px solid #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     float: right;
     margin: 0 0 2em 10px;
 }
-h2 .content iframe {
+head .content iframe {
     border: 8px solid #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     float: right;
@@ -394,7 +394,7 @@ textarea {
     line-height: 2.1em;
     padding: 0 16px;
 }
-.payment h2 img {
+.payment head img {
     height: 30px;
     margin-left: 10px;
 }
@@ -541,14 +541,14 @@ footer .add {
 }
 }
 @media all and (max-width: 640px) {
-h2 {
+head {
     padding: 0 5.2083%;
    
 }
-h2 .content img {
+head .content img {
     display: none;
 }
-h2 p {
+head p {
     width: 100%;
 }
 .checkbox input, .radio-btn input {
@@ -593,7 +593,7 @@ h2 p {
 h1 {
     font-size: 1.5em;
 }
-h2 {
+head {
     font-size: 1.25em;
 }
 label {
@@ -605,7 +605,7 @@ label {
 .char, .char2, .tribute, .desig label {
     display: none;
 }
-.payment h2 img {
+.payment head img {
     margin: 0.25em 0 0;
 }
 .hidetool {

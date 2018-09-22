@@ -1,26 +1,44 @@
 package edu.dtcc.janemone.b_positive_app;
 
 import android.content.Intent;
-import android.os.Bundle;
+import android.content.res.Resources;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ListView;
 
-public class Donation extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+public class leaderActivity extends AppCompatActivity
+        implements NavigationView.OnNavigationItemSelectedListener{
+
+    private static ListView leaderList;
+    private static String[] names;
+    private static String[] dollarDonations;
     private DrawerLayout drawer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.donation);
+        setContentView(R.layout.activity_leader);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        Resources res = getResources(); //imports all the item data stored in strings.xml
+        leaderList = (ListView) findViewById(R.id.leaderList);
+
+        names = res.getStringArray(R.array.leaderboardNames); //stores the car names in a string array
+        dollarDonations = res.getStringArray(R.array.donations);
+
+        //CarAdapter object has the proper layout for displaying the data
+        leaderAdapter adapterObj = new leaderAdapter(this, names, dollarDonations);
+        leaderList.setAdapter(adapterObj);
 
         drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -28,6 +46,7 @@ public class Donation extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
+        drawer.bringToFront();
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
     }
@@ -80,7 +99,6 @@ public class Donation extends AppCompatActivity
             Intent intent = new Intent(this, Donation.class);
             drawer.closeDrawers();
             startActivity(intent);
-
         } else if (id == R.id.nav_leaderboard) {
             Intent intent = new Intent(this, leaderActivity.class);
             drawer.closeDrawers();
@@ -90,8 +108,7 @@ public class Donation extends AppCompatActivity
             Intent intent = new Intent ( this, Share.class);
             drawer.closeDrawers();
             startActivity(intent);
-
-        } else if (id == R.id.nav_aboutus) {
+        } else if (id == R.id.nav_aboutus){
             Intent intent = new Intent(this, AboutUs.class);
             drawer.closeDrawers();
             startActivity(intent);
@@ -101,5 +118,5 @@ public class Donation extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
-}
 
+}

@@ -105,7 +105,9 @@ public class leaderActivity extends AppCompatActivity
             startActivity(intent);
 
         } else if (id == R.id.nav_share) {
-
+            Intent intent = new Intent ( this, Share.class);
+            drawer.closeDrawers();
+            startActivity(intent);
         } else if (id == R.id.nav_aboutus){
             Intent intent = new Intent(this, AboutUs.class);
             drawer.closeDrawers();

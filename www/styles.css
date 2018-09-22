@@ -64,6 +64,7 @@ input[type="checkbox"], input[type="radio"] {
     src: url("fonts/Museo_Slab_500-webfont.eot?iefix") format("eot"), url("fonts/Museo_Slab_500-webfont.woff") format("woff"), url("fonts/Museo_Slab_500-webfont.ttf") format("truetype"), url("fonts/Museo_Slab_500-webfont.svg#webfontyumMOUTD") format("svg");
 }
 body {
+    text-align: center;
     background: none repeat scroll 0 0 #fff;
     color: #363636;
     font: 500 1em/1.5em "proxima-nova",Helvetica,arial,sans-serif;

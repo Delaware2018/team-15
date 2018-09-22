@@ -2,6 +2,19 @@
 <html lang= "en">
 <head>
     <link href="styles.css" rel="Stylesheet" />
+    <style type="text/css">
+		body {
+			background: none repeat scroll 0 0 #fff;
+			color: #363636;
+			font: 500 1em/1.5em "proxima-nova",Helvetica,arial,sans-serif;
+		}
+
+		.wrapper, footer {
+			margin: 0 auto;
+			max-width: 848px;
+			width: 96%;
+		} 
+    </style>
     <title>
         Survey
     </title>
@@ -40,11 +53,14 @@
         <option value="TV">Television/Social Media</option><br>
         <option value="Other">other</option><br>
     </select><br>
-        Would you like to sign up for our newsletter?<br>
-        <input type="text" news="Would you like to sign up for our newsletter?"><br>
+    <label>Would you like to sign up for our newsletter? <span class="req"></span></label><br>
+    <select>
+        <option value="Yes">Yes</option><br>
+        <option value="no">No</option><br>
+    </select><br>
     </form>
     <section class="cf last" id="button-block">
-				<div style="width: 100%; text-align: center;">
+				<div style="width: 100%; text-align: center; margin: 25%;">
 					<input type="submit" value="SUBMIT" name="submit" id="submit" class="submit-button" />
 				</div>
 			</section>

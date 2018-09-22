@@ -78,7 +78,9 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_video) {
 
         } else if (id == R.id.nav_donations) {
-
+            Intent intent = new Intent(this, Donation.class);
+            drawer.closeDrawers();
+            startActivity(intent);
         } else if (id == R.id.nav_leaderboard) {
 
         } else if (id == R.id.nav_share) {

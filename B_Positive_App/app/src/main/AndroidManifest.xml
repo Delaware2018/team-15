@@ -26,6 +26,12 @@
             android:theme="@style/AppTheme.NoActionBar"
         />
 
+        <activity
+            android:name=".Donation"
+            android:label="B_Positive_App"
+            android:theme="@style/AppTheme.NoActionBar"
+        />
+
     </application>
 
 </manifest>

@@ -68,7 +68,7 @@
 
             <Spinner
                 android:id="@+id/socialSpinner"
-                android:layout_width="325dp"
+                android:layout_width="304dp"
                 android:layout_height="42dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"

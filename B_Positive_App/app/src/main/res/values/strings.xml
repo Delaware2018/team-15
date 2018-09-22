@@ -18,6 +18,12 @@
         \n4. Spread the B+ message!
         As it says on B+ T-shirts, “It’s not a grade. It’s an attitude.” By spreading the B+ (Be Positive) message through outreach efforts and talks, we share the lessons that Andrew taught us: have fun, set goals and try your best, show affection, and be comfortable with yourself.
         We all need to “Live Like Andrew.”</string>
+    <string name="newsletter_header">Newsletter Title</string>
+    <string name="newsletter_date">Date Published: 9/22/2018</string>
+    <string name="newsletter_body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at pulvinar orci, ut pellentesque enim. Integer pellentesque nibh tellus, vitae consectetur sem fringilla ut. Fusce at metus ligula. Aenean vel dui quis quam porta tempus.
+        In feugiat ipsum quis felis iaculis porta. Donec eu iaculis quam. Praesent lacinia, dui ut sodales vestibulum, neque ex iaculis nulla, vitae cursus nibh purus sit amet massa. Cras volutpat, enim a faucibus luctus, arcu diam consequat leo, id egestas ligula dolor id sapien.\n\n
+        Quisque id arcu nunc. Vivamus at dui augue. Proin tortor ipsum, sagittis eu nisl et, pharetra mollis enim. Maecenas vel elit urna. Morbi sit amet metus aliquet arcu condimentum fringilla. Cras scelerisque tellus elit, rhoncus sagittis urna porttitor et. Etiam quis nisi sit amet velit semper convallis sed vitae quam.
+        Mauris interdum quis leo non tincidunt. Nullam pulvinar justo a lectus aliquam dignissim. Nam non nibh lacus. Suspendisse sit amet leo nibh. Suspendisse potenti. Nulla tristique est vel massa aliquet, eget eleifend tellus laoreet. Mauris eget dignissim purus. Fusce purus arcu, vehicula nec ligula eget, molestie iaculis lorem.</string>
 
     <string-array name="genders">
         <item>Gender</item>

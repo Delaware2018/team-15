@@ -11,6 +11,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
 public class Thanks extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -31,6 +32,14 @@ public class Thanks extends AppCompatActivity
 
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        Button thanks = findViewById(R.id.thanksButton);
+        thanks.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(Thanks.this, leaderActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -41,11 +50,6 @@ public class Thanks extends AppCompatActivity
         } else {
             super.onBackPressed();
         }
-    }
-
-
-    public void thanksButton(View v){
-        startActivity(new Intent(Thanks.this, leaderActivity.class));
     }
 
     @Override

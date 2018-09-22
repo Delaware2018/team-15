@@ -1,5 +1,6 @@
 package edu.dtcc.janemone.b_positive_app;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -71,6 +72,11 @@ public class surveyActivity extends AppCompatActivity {
                         sponsorSpinner.getSelectedItem().equals("Can you sponsor an event?")||socialSpinner.getSelectedItem().equals("Would you share on social media?")||
                         hearSpinner.getSelectedItem().equals("How did you hear about us?")||newsSpinner.getSelectedItem().equals("Would you like monthly newsletter?")){
                     errorText.setText("Please select appropriate options");
+                }
+                else
+                {
+                    Intent intent = new Intent(surveyActivity.this, Thanks.class);
+                    startActivity(intent);
                 }
 
             }

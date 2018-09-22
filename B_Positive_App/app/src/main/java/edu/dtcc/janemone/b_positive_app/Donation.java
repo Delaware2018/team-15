@@ -10,6 +10,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.CheckBox;
 
 public class Donation extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -30,6 +32,13 @@ public class Donation extends AppCompatActivity
 
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+    }
+
+    public void donatePushed(View v) {
+        CheckBox cb = (CheckBox)findViewById(R.id.surveyBox);
+        if (cb.isChecked()){
+            startActivity(new Intent(this, surveyActivity.class));
+        }
     }
 
     @Override

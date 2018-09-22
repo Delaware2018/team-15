@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC>
+<html lang= "en">
+<head>
+    <title>
+        Survey
+    </title>
+</head>
+
+<body>
+    <form>
+        First name:<br>
+        <input type="text" name="firstname"><br> 
+        Last name:<br>
+        <input type="text" name="lastname"><br>
+        Age:<br>
+        <input type="text" age="age"><br>
+        Gender:<br>
+        <input type="text" gender="gender"><br> 
+        Ethnicity:<br>
+        <input type="text" ethnicity="ethnicity">
+        How did you hear about Be Positive?:<br>
+        <input type="text" how="How did you hear about Be Positive?"><br>
+    </form>
+
+
+</body> 
+
+

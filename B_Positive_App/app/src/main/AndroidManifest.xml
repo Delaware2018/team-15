@@ -27,17 +27,30 @@
         />
 
         <activity
+            android:name=".Share"
+            android:label="B_Positive_App"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+
+        <activity
             android:name=".Donation"
             android:label="B_Positive_App"
             android:theme="@style/AppTheme.NoActionBar"
         />
 
         <activity
+<<<<<<< HEAD
             android:name=".leaderActivity"
             android:label="B_Positive_App"
             android:theme="@style/AppTheme.NoActionBar"
             />
 
+=======
+        android:name=".Thanks"
+        android:label="B_Positive_App"
+        android:theme="@style/AppTheme.NoActionBar"
+        />
+>>>>>>> 9d193de99bbdfa70f4b9bc51d72261fb4cf0e32b
     </application>
 
 </manifest>

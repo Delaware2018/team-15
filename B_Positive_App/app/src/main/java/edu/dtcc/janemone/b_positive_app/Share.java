@@ -14,12 +14,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-public class AboutUs extends AppCompatActivity
+public class Share extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-    private DrawerLayout drawer;
+private DrawerLayout drawer;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+@Override
+protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.about_us);
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -27,33 +27,38 @@ public class AboutUs extends AppCompatActivity
 
         drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-    }
+        }
 
-    @Override
-    public void onBackPressed() {
+@Override
+public void onBackPressed() {
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
+        drawer.closeDrawer(GravityCompat.START);
         } else {
-            super.onBackPressed();
+        super.onBackPressed();
         }
-    }
+        }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
+
+        public void postButton(View v){
+            startActivity(new Intent(Share.this, Thanks.class));
+        }
+
+@Override
+public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
-    }
+        }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
+@Override
+public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
@@ -61,47 +66,42 @@ public class AboutUs extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+        return true;
         }
 
         return super.onOptionsItemSelected(item);
-    }
+        }
 
-    @SuppressWarnings("StatementWithEmptyBody")
-    @Override
-    public boolean onNavigationItemSelected(MenuItem item) {
+@SuppressWarnings("StatementWithEmptyBody")
+@Override
+public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
         if (id == R.id.nav_main) {
-            Intent intent = new Intent(this, MainActivity.class);
-            drawer.closeDrawers();
-            startActivity(intent);
+        //
         } else if (id == R.id.nav_video) {
 
         } else if (id == R.id.nav_donations) {
-            Intent intent = new Intent(this, Donation.class);
-            drawer.closeDrawers();
-            startActivity(intent);
+        Intent intent = new Intent(this, Donation.class);
+        drawer.closeDrawers();
+        startActivity(intent);
 
         } else if (id == R.id.nav_leaderboard) {
-            Intent intent = new Intent(this, leaderActivity.class);
-            drawer.closeDrawers();
-            startActivity(intent);
 
         } else if (id == R.id.nav_share) {
-            Intent intent = new Intent (this, Share.class);
-            drawer.closeDrawers();
-            startActivity(intent);
+        Intent intent = new Intent ( packageContent this, Share.class);
+        drawer.closeDrawers();
+        startActivity(intent);
 
         } else if (id == R.id.nav_aboutus) {
-            Intent intent = new Intent(this, AboutUs.class);
-            drawer.closeDrawers();
-            startActivity(intent);
+        Intent intent = new Intent(this, AboutUs.class);
+        drawer.closeDrawers();
+        startActivity(intent);
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
-    }
+        }
 }

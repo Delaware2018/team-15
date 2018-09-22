@@ -78,7 +78,11 @@ public class MainActivity extends AppCompatActivity
             Intent intent = new Intent(this, MainActivity.class);
             drawer.closeDrawers();
             startActivity(intent);
+
         } else if (id == R.id.nav_video) {
+            Intent intent = new Intent(this, Video.class);
+            drawer.closeDrawers();
+            startActivity(intent);
 
         } else if (id == R.id.nav_donations) {
             Intent intent = new Intent(this, Donation.class);

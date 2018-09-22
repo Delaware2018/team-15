@@ -45,7 +45,7 @@ public class Video extends AppCompatActivity
     }
 
     public void thanksButton(View v){
-        startActivity(new Intent(Thanks.this, leaderActivity.class));
+        startActivity(new Intent(this, leaderActivity.class));
     }
 
     @Override
@@ -77,8 +77,14 @@ public class Video extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_main) {
-            //
+            Intent intent = new Intent(this, MainActivity.class);
+            drawer.closeDrawers();
+            startActivity(intent);
+
         } else if (id == R.id.nav_video) {
+            Intent intent = new Intent(this, Video.class);
+            drawer.closeDrawers();
+            startActivity(intent);
 
         } else if (id == R.id.nav_donations) {
             Intent intent = new Intent(this, Donation.class);
@@ -86,6 +92,9 @@ public class Video extends AppCompatActivity
             startActivity(intent);
 
         } else if (id == R.id.nav_leaderboard) {
+            Intent intent = new Intent(this, leaderActivity.class);
+            drawer.closeDrawers();
+            startActivity(intent);
 
         } else if (id == R.id.nav_share) {
             Intent intent = new Intent (this, Share.class);

@@ -21,7 +21,7 @@ private DrawerLayout drawer;
 @Override
 protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.about_us);
+        setContentView(R.layout.share);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -43,11 +43,6 @@ public void onBackPressed() {
         } else {
         super.onBackPressed();
         }
-        }
-
-
-        public void postButton(View v){
-            startActivity(new Intent(Share.this, Thanks.class));
         }
 
 @Override
@@ -90,7 +85,7 @@ public boolean onNavigationItemSelected(MenuItem item) {
         } else if (id == R.id.nav_leaderboard) {
 
         } else if (id == R.id.nav_share) {
-        Intent intent = new Intent ( packageContent this, Share.class);
+        Intent intent = new Intent ( this, Share.class);
         drawer.closeDrawers();
         startActivity(intent);
 

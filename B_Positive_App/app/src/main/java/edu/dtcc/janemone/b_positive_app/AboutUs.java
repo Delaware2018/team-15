@@ -74,7 +74,9 @@ public class AboutUs extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_main) {
-            //
+            Intent intent = new Intent(this, MainActivity.class);
+            drawer.closeDrawers();
+            startActivity(intent);
         } else if (id == R.id.nav_video) {
 
         } else if (id == R.id.nav_donations) {

@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
+        drawer.bringToFront();
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
     }
@@ -74,7 +75,9 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_main) {
-            //
+            Intent intent = new Intent(this, MainActivity.class);
+            drawer.closeDrawers();
+            startActivity(intent);
         } else if (id == R.id.nav_video) {
 
         } else if (id == R.id.nav_donations) {

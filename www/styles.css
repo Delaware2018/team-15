@@ -1,13 +1,13 @@
 ﻿html, body {
 }
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, h2, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     border: 0 none;
     font: inherit;
     margin: 0;
     padding: 0;
     vertical-align: baseline;
 }
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure, footer, h2, hgroup, menu, nav, section {
     display: block;
 }
 ol, ul {
@@ -29,7 +29,18 @@ div, section, h1, h2, h3, h4, h5, h6, p, ul, li, section, footer, input, select,
     box-sizing: border-box;
 }
 form {
-    margin: 0;
+    margin-right: 25em;
+    margin-left: 25em;
+    
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
 }
 input, select, textarea {
     font-size: 100%;
@@ -106,7 +117,9 @@ h1 {
     margin-bottom: 3em;
 }
 h2 {
-    font-size: 1.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 3.5em;
 }
 h3 {
     font-size: 1.125em;
@@ -133,7 +146,7 @@ a:hover {
 }
 .logo-image {
 }
-header p {
+h2 p {
     width: 75.2406%;
 }
 .cart {
@@ -147,13 +160,13 @@ header p {
     font-size: 0.75em;
     font-style: italic;
 }
-header .content img {
+h2 .content img {
     border: 8px solid #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     float: right;
     margin: 0 0 2em 10px;
 }
-header .content iframe {
+h2 .content iframe {
     border: 8px solid #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     float: right;
@@ -528,13 +541,14 @@ footer .add {
 }
 }
 @media all and (max-width: 640px) {
-header {
+h2 {
     padding: 0 5.2083%;
+   
 }
-header .content img {
+h2 .content img {
     display: none;
 }
-header p {
+h2 p {
     width: 100%;
 }
 .checkbox input, .radio-btn input {

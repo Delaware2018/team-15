@@ -1,0 +1,623 @@
+﻿html, body {
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    border: 0 none;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+ol, ul {
+    list-style: outside none none;
+}
+.cf:before, .cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+strong {
+    font-weight: bold;
+}
+.cf {
+}
+div, section, h1, h2, h3, h4, h5, h6, p, ul, li, section, footer, input, select, textarea {
+    box-sizing: border-box;
+}
+form {
+    margin: 0;
+}
+input, select, textarea {
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+}
+.button {
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+}
+input {
+    line-height: normal;
+}
+.button {
+    line-height: normal;
+}
+.button {
+    cursor: pointer;
+}
+html input[type="button"], input[type="reset"], input[type="submit"] {
+    cursor: pointer;
+}
+input[type="checkbox"], input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+@font-face {
+    font-family: "MuseoSlab500";
+    font-style: normal;
+    font-weight: normal;
+    src: url("fonts/Museo_Slab_500-webfont.eot?iefix") format("eot"), url("fonts/Museo_Slab_500-webfont.woff") format("woff"), url("fonts/Museo_Slab_500-webfont.ttf") format("truetype"), url("fonts/Museo_Slab_500-webfont.svg#webfontyumMOUTD") format("svg");
+}
+body {
+    background: none repeat scroll 0 0 #fff;
+    color: #363636;
+    font: 500 1em/1.5em "proxima-nova",Helvetica,arial,sans-serif;
+}
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+.wrapper, footer {
+    margin: 0 auto;
+    max-width: 848px;
+    width: 96%;
+}
+#block {
+    background: none repeat scroll 0 0 #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    margin-bottom: 2em;
+    padding: 2em 5.2083%;
+}
+#donation-block {
+	margin-bottom: 2em;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+h2, h3, h4, h5 {
+    color: #212121;
+    font-weight: 700;
+}
+h1 {
+    color: #283658;
+    font-family: "chunk",Georgia,serif;
+    font-size: 1.875em;
+    line-height: 1em;
+    margin-bottom: 0.933em;
+}
+h2 {
+    font-size: 1.5em;
+}
+h3 {
+    font-size: 1.125em;
+}
+h2, h3, h4, p, #content ul {
+    margin-bottom: 8pt;
+}
+a {
+    color: #c21734;
+    text-decoration: underline;
+}
+a:hover {
+    color: #283658;
+    text-decoration: none;
+}
+.ctr {
+    text-align: center;
+}
+.logo {
+    border-bottom: 1px solid #283658;
+    margin: 1.5em 0;
+    padding-bottom: 1em;
+    text-align: center;
+}
+.logo-image {
+}
+header p {
+    width: 75.2406%;
+}
+.cart {
+    width: 90.2406%;
+}
+.call {
+    font-size: 0.875em;
+    width: 92.2406%;
+}
+.char2 {
+    font-size: 0.75em;
+    font-style: italic;
+}
+header .content img {
+    border: 8px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    float: right;
+    margin: 0 0 2em 10px;
+}
+header .content iframe {
+    border: 8px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    float: right;
+    margin: 0 1em 2em 10px;
+}
+.amount {
+    margin-bottom: 2em;
+    position: relative;
+}
+.amount li {
+    background-color: #047C18;
+    background: -moz-linear-gradient(center top , #047C18, #088124) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-radius: 12px;
+    color: #fff;
+    cursor: pointer;
+    float: left;
+    font-family: "proxima-nova",Helvetica,arial,sans-serif;
+    font-size: 1.4em;
+    font-weight: 700;
+    margin-right: 3.2083%;
+    padding: 30px 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 11.3155%;
+}
+.amount li.other {
+    margin-right: 0;
+}
+.amount li:hover, .amount li.active {
+    background: none repeat scroll 0 0 gold;
+    color: #fff;
+}
+.other-field {
+    background: none repeat scroll 0 0 #fff;
+    clear: left;
+    display: none;
+    float: left;
+    margin-top: 1em;
+    padding: 10px 20px;
+}
+.other-field label {
+    margin-bottom: 0.1em;
+    padding-left: 24px;
+}
+.other-field span {
+    float: left;
+    font-family: "proxima-nova",Helvetica,arial,sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 38px;
+    padding-right: 10px;
+}
+.other-field input[type="text"] {
+    float: left;
+    position: relative;
+    width: 80%;
+    z-index: 99;
+}
+.freq .radio-btn, .billing .checkbox {
+    background: -moz-linear-gradient(center top , #fff, #f2f2f2) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.req {
+    color: #ee3e41;
+    font-size: 1.1em;
+}
+label {
+    display: block;
+}
+input[type="text"], input[type="tel"], input[type="email"], select, textarea {
+    border: 1px solid #b7b7b7;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 8px 10px;
+    width: 100%;
+}
+input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus, select:focus, textarea:focus {
+    border-color: #629080;
+}
+select {
+    height: 40px;
+    padding: 7px 10px;
+}
+textarea {
+    height: 160px;
+}
+.checkbox input, .radio-btn input {
+    height: 16px;
+    width: 16px;
+}
+.form-set {
+    margin-bottom: 2em;
+}
+.send-by, .notif, .send-email {
+    display: none;
+    margin-bottom: 0;
+}
+.billing, .payment {
+    margin-bottom: 1.5em;
+}
+.col {
+    float: left;
+    margin: 0 4% 2em 0;
+    width: 48%;
+}
+.two-col .form-item {
+    float: left;
+    margin: 0 4% 1em 0;
+    width: 48%;
+}
+.two-col .even {
+    margin-right: 0;
+}
+.col.right {
+    margin-right: 0;
+}
+.freq .radio-btn {
+    border: 1px solid #ccc;
+    padding: 0.5em 16px;
+}
+.freq label {
+    cursor: pointer;
+}
+.freq span, label span {
+    font-size: 0.75em;
+}
+.freq .odd {
+    border-bottom: medium none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.freq .even {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.desig label {
+    margin-bottom: 0.5em;
+}
+.tribute {
+    margin-bottom: 1em;
+}
+.tribute h3 {
+    margin-bottom: 16px;
+}
+.tribute, .send-by {
+    clear: left;
+}
+.tribute .form-item {
+    float: left;
+}
+.tribute .send-email {
+    clear: left;
+    padding-top: 1em;
+    width: 100%;
+}
+.tribute .notif {
+    clear: left;
+    padding-top: 1em;
+    width: 100%;
+}
+.tribute .checkbox {
+    line-height: 2.4em;
+    margin-right: 1em;
+}
+.tribute .checkbox input {
+    margin-right: 0.5em;
+}
+.tribute .honor {
+    margin-right: 1em;
+}
+.how {
+    margin-bottom: 1em;
+}
+.how h3 {
+    margin-bottom: 16px;
+}
+.how, .send-by {
+    clear: left;
+}
+.how .form-item {
+    float: left;
+}
+.how .send-email {
+    clear: left;
+    padding-top: 1em;
+    width: 100%;
+}
+.how .notif {
+    clear: left;
+    padding-top: 1em;
+    width: 100%;
+}
+.how .checkbox {
+    line-height: 2.4em;
+    margin-right: 1em;
+}
+.how .checkbox input {
+    margin-right: 0.5em;
+}
+.how .honor {
+    margin-right: 1em;
+}
+.how .howheard {
+    margin-right: 1em;
+}
+.send-by {
+    padding-top: 1em;
+}
+.send-by label {
+    float: left;
+    margin-right: 1em;
+}
+.send-by .radio-btn {
+    margin-right: 1em;
+}
+.send-email label {
+    float: none;
+}
+.send-email input[type="email"] {
+    margin-bottom: 1em;
+    max-width: 300px;
+}
+.billing .checkbox {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    line-height: 2.1em;
+    padding: 0 16px;
+}
+.payment h2 img {
+    height: 30px;
+    margin-left: 10px;
+}
+.expire select {
+    float: left;
+}
+.expire select {
+    width: 42%;
+}
+.expiremiddle {
+    float: left;
+    font-size: 2em;
+    line-height: 1.4em;
+    padding: 0 10px;
+}
+.validation li {
+    list-style-type: circle;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.csc input {
+    max-width: 200px;
+}
+.form-btn {
+    margin-bottom: 2em;
+    text-align: center;
+}
+.button {
+    background: -moz-linear-gradient(center top , #db1a3a, #c21734) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: medium none;
+    border-radius: 12px;
+    color: #fff;
+    font-weight: 700;
+    padding: 20px 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.button:hover {
+    background: none repeat scroll 0 0 #c21734;
+    color: #fff;
+}
+.review {
+    font-size: 0.75em;
+    padding: 0 5.2083%;
+}
+.security {
+    position: fixed;
+    right: 10px;
+    top: 40px;
+}
+.security div {
+    margin-bottom: 1em;
+    text-align: center;
+}
+.otherlogos {
+    margin-bottom: 2em;
+    position: static;
+    text-align: center;
+}
+.otherlogos div {
+    display: inline-block;
+    padding: 0 10px;
+}
+footer {
+    border-top: 1px solid #ccc;
+    padding: 2em 0;
+}
+footer p {
+    color: #636363;
+    font-size: 0.667em;
+    margin-bottom: 0.5em;
+}
+footer li {
+    display: inline-block;
+    padding-left: 5px;
+}
+footer ul {
+    clear: right;
+    color: #636363;
+    float: right;
+    font-size: 0.667em;
+    margin-bottom: 0.5em;
+}
+footer .fgc {
+    background: url("../images/sprite.png") no-repeat scroll 0 -48px rgba(0, 0, 0, 0);
+    display: block;
+    height: 30px;
+    margin-right: -6px;
+    text-indent: -9999em;
+    width: 119px;
+}
+footer .add {
+    clear: left;
+    min-width: 140px;
+}
+.small {
+    display: none;
+}
+.checkboxtop {
+    margin-bottom: 1em;
+}
+.bottom-logo {
+    display: none;
+}
+@media all and (max-width: 1060px) {
+.security {
+    margin-bottom: 2em;
+    position: static;
+    text-align: center;
+}
+.security div {
+    display: inline-block;
+    padding: 0 10px;
+}
+}
+@media all and (max-width: 900px) {
+.expire select {
+    width: 44%;
+}
+}
+@media all and (max-width: 730px) {
+.amount li {
+    margin-right: 2.2083%;
+    width: 14.8%;
+}
+.tribute .honor {
+    clear: left;
+    margin-top: 1em;
+}
+.how .howheard {
+    clear: left;
+    margin-top: 1em;
+}
+.tribute .honoree {
+    margin-top: 1em;
+}
+footer .left, footer .right, footer ul {
+    float: none;
+    text-align: center;
+}
+footer .add {
+    margin: 1em auto;
+}
+}
+@media all and (max-width: 640px) {
+header {
+    padding: 0 5.2083%;
+}
+header .content img {
+    display: none;
+}
+header p {
+    width: 100%;
+}
+.checkbox input, .radio-btn input {
+    height: 20px;
+    width: 20px;
+}
+.amount li {
+    margin: 0 2% 1em 0;
+    width: 31.3333%;
+}
+.break {
+    clear: left;
+}
+.col, .two-col .form-item {
+    float: none;
+    margin: 0 0 1em;
+    width: 100%;
+}
+.amount, .col {
+    margin-bottom: 2em;
+}
+.other-field {
+    margin-top: 0;
+    width: 98%;
+}
+.tribute .honor {
+    clear: left;
+    margin-bottom: 1em;
+}
+.how .howheard {
+    clear: left;
+    margin-bottom: 1em;
+}
+}
+@media all and (max-width: 540px) {
+#content {
+    padding: 2em 7.62819% 1em;
+}
+.button {
+    font-size: 2em;
+}
+h1 {
+    font-size: 1.5em;
+}
+h2 {
+    font-size: 1.25em;
+}
+label {
+    font-size: 0.875em;
+}
+.desig {
+    margin-bottom: 0;
+}
+.char, .char2, .tribute, .desig label {
+    display: none;
+}
+.payment h2 img {
+    margin: 0.25em 0 0;
+}
+.hidetool {
+    display: none;
+}
+footer .add {
+    display: none;
+}
+.small {
+    display: inherit;
+}
+.bottom-logo {
+    display: inherit;
+}
+.big {
+    display: none;
+}
+#block {
+    margin-bottom: 1em;
+}
+}
+@media all and (max-width: 320px) {
+.button {
+    font-size: 1.5em;
+}
+.logo-image {
+    border: 8px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+}

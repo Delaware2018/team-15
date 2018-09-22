@@ -1,0 +1,484 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>
+		B+ Foundation Donation Page
+	</title>
+	<script type='text/javascript' src='https://bepositive.org/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+	<script type='text/javascript' src='https://bepositive.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+	<!-- Google Tag Manager -->
+	<script>
+(function (w, d, s, l, i) {
+w[l] = w[l] || []; w[l].push({
+'gtm.start':
+new Date().getTime(), event: 'gtm.js'
+}); var f = d.getElementsByTagName(s)[0],
+j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-TTWWDVG');</script>
+	<!-- End Google Tag Manager -->
+	<link href="styles.css" rel="Stylesheet" />
+	<style type="text/css">
+		body {
+			background: none repeat scroll 0 0 #fff;
+			color: #363636;
+			font: 500 1em/1.5em "proxima-nova",Helvetica,arial,sans-serif;
+		}
+
+		.wrapper, footer {
+			margin: 0 auto;
+			max-width: 848px;
+			width: 96%;
+		}
+	</style>
+
+
+	<script type="text/javascript">
+function setDonation(p_Element, p_Amount, p_ShowOther) {
+	document.getElementById('donation').value = p_Amount;
+	var l_hide = document.getElementsByClassName('other-field');
+	for (l_hidethis = 0; l_hidethis < l_hide.length; l_hidethis++)
+		l_hide[l_hidethis].style.display = (p_ShowOther ? 'inline' : 'none');
+	var l_active = document.getElementsByClassName('active')[0];
+	if (l_active)
+		l_active.className = l_active.className.replace('active', '');
+	p_Element.className += ' active';
+	if (p_ShowOther)
+		document.getElementById('donation').focus();
+}
+function pickTribute(p_Pick) {
+	document.getElementById('yes-gift').checked |= p_Pick;
+	setTribute();
+}
+function setTribute() {
+	var l_box = document.getElementById('yes-gift');
+	var l_sendBys = document.getElementsByClassName('send-by');
+	l_sendBys[0].style.display = (l_box.checked ? 'block' : 'none');
+}
+function setSendBy(p_Element) {
+	var l_notifs = document.getElementsByClassName('notif');
+	l_notifs[0].style.display = (p_Element.value == '2' ? 'block' : 'none');
+	var l_emails = document.getElementsByClassName('send-email');
+	l_emails[0].style.display = (p_Element.value == '1' ? 'block' : 'none');
+}
+function setHowHeard() {
+	var l_howheard = document.getElementById('howheard').selectedIndex;
+	document.getElementById('howheard-other').style.display = (l_howheard == 5 ? 'inline' : 'none');
+}
+function showPopup(p_Event, p_ID, p_Show) {
+	document.getElementById(p_ID).style.display = (p_Show ? '' : 'none');
+}
+function closePopups(event) {
+	showPopup(event, 'recurringinfo', false);
+	showPopup(event, 'cvvinfo', false);
+}
+	</script>
+	<style type="text/css">
+		input.donate-button {
+			width: 25%;
+			height: 3em;
+			color: white;
+			font-size: 1.4em;
+			font-weight: 700;
+			border: none;
+			background-color: #047C18;
+			border-radius: 12px 12px 12px 12px;
+		}
+
+		.whatsthis {
+			font-size: smaller;
+			color: #B02020;
+			cursor: pointer;
+		}
+
+		#recurringinfo {
+			background-color: white;
+			border: 2px solid grey;
+			width: 24em;
+			cursor: pointer;
+			left: 14em;
+			top: 4em;
+			font-size: smaller;
+			padding: 6pt;
+		}
+
+		#cvvinfo {
+			background-color: white;
+			border: 2px solid grey;
+			width: 24em;
+			cursor: pointer;
+			left: 8em;
+			top: -6em;
+			font-size: smaller;
+			padding: 4pt;
+		}
+
+		.form-item .cf {
+			padding: 0.5em 8px;
+		}
+	</style>
+</head>
+<body class="donate">
+	<!-- Google Tag Manager (noscript) -->
+	<noscript>
+		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TTWWDVG"
+				height="0" width="0" style="display:none;visibility:hidden"></iframe>
+	</noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<div class="wrapper">
+
+
+		<header class="cf">
+			<div class="logo cf big">
+				<a href="http://bepositive.org">
+					<img alt="B+ Foundation" src="images/thebepositivefoundation-donation-header-rev.jpg?v=2" />
+				</a>
+			</div>
+			<div class="logo cf small">
+				<a href="http://bepositive.org">
+					<img alt="B+ Foundation" src="images/thebepositivefoundation-donation-header-rev.jpg?v=2" />
+				</a>
+			</div>
+			<div class="content">
+				<table cellpadding="0" cellspacing="0" style="width: 100%;">
+					<tr>
+						<td style="vertical-align: middle;">
+							<h1 style="margin: 0px;"><span id="lblpage_title">Your secure donation helps fight childhood cancer</span></h1>
+						</td>
+						<td style="text-align: right;"><span id="lblheaderimage"><a target="_blank" href="http://www.guidestar.org/organizations/42-1741037/andrew-mcdonough-b-positive-foundation.aspx"><img border="0" alt="GuideStar" src="images/logo-exchange-gold_128x94.gif" /></a></span></td>
+					</tr>
+				</table>
+			</div>
+		</header>
+
+		<form name="donateForm" method="post" action="index.aspx" id="donateForm">
+			<div>
+				<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTEzMTM1MDQ1NDJkZBd34INodVAg3ACvbhH7YbVJ2TDRByeFNVwOMPNv1FXk" />
+			</div>
+
+			<div>
+
+				<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="F3E0312A" />
+			</div>
+
+			<section class="cf" id="donation-block">
+				<div class="amount cf">
+					<h2>Gift Amount <span class="req">*</span></h2>
+					<ul class="form-item cf text-field amount">
+						 
+						<input type="text" id="donate_amount" onchange="pickAmount(this.value > '');" onkeypress="pickAmount(this.value > '');" maxlength="9" value="" name="honor_name" />
+					
+					</ul>
+					<div class="other-field hide" style="width: 50%; display: none">
+						<label style="font-weight: bold;">Other Amount</label>
+						<span>$</span> <input type="text" value="0" id="donation" maxlength="25" name="donation" />
+					</div>
+				</div><!-- .amount -->
+				<div class="form-set cf left freq" style="position: relative;">
+					<h2>Gift Frequency <span class="req">*</span></h2>
+					<!--				<h5>Help Fight Childhood Cancer with a Recurring Donation:</h5>-->
+					<div id="recurringinfo" style="position: absolute; display: none;" onclick="showPopup(event, 'recurringinfo', false)">
+						<p>You can make a one-time donation or a convenient, automatic monthly or annual gift. A recurring gift is a charge that is automatically deducted from your credit or debit card each month, if you selected Monthly, or once a year, if you selected Annual. Your first monthly donation will be charged today and subsequent donations every month forward will occur on this day of the month. Or your first annual donation will be charged today and subsequent donations will occur on this day of this month each year forward.  You may cancel at any time by contacting B+.</p>
+						<div style="position: absolute; right: 0px; bottom: 0px; width: 16px; height: 24px;"><span style="font-size: 12pt; font-weight: bold;">X</span></div>
+					</div>
+					<div class="form-item radio-btn">
+						<div class="form-item cf odd">
+							<label onclick="" for="one-time">
+								<input type="radio" value="one-time" id="one-time" name="recurring" checked="checked" /> One-time gift
+							</label>
+						</div>
+						<div class="form-item cf even">
+							<label onclick="" for="monthly">
+								<input type="radio" value="monthly" id="monthly" name="recurring" /> Recurring monthly gift&nbsp;<span class="whatsthis" onclick="showPopup(event, 'recurringinfo', true);">what's this</span>
+							</label>
+						</div>
+						<div class="form-item cf odd">
+							<label onclick="" for="annually">
+								<input type="radio" value="annually" id="annually" name="recurring" /> Recurring annual gift&nbsp;<span class="whatsthis" onclick="showPopup(event, 'recurringinfo', true);">what's this</span>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-set cf tribute">
+					<h2>Would you like to make this a tribute gift?</h2>
+					<div class="form-item cf checkbox">
+						<label onclick="" for="yes-gift">
+							<input type="checkbox" onclick="setTribute()" value="on" id="yes-gift" name="tribute" /> Yes, make this gift
+						</label>
+					</div>
+					<div class="form-item cf select-field honor">
+						<select id="honor_type" name="honor_type" onclick="pickTribute(true);">
+							<option value="1">in honor of </option>
+							<option value="2">in memory of </option>
+						</select>
+					</div>
+					<div class="form-item cf text-field honoree">
+						<input type="text" id="honor_name" onchange="pickTribute(this.value > '');" onkeypress="pickTribute(this.value > '');" maxlength="255" value="" name="honor_name" />
+					</div>
+					<div><span class="req"></span></div>
+					<div class="send-by cf" style="display: none;">
+						<!--					<h3>Send notification to the following</h3>-->
+						<label>Send notification by:</label>
+						<div class="form-item cf radio-btn">
+							<label><input type="radio" onclick="setSendBy(this)" value="1" name="send_by" /> Email</label>
+						</div>
+						<div class="form-item cf radio-btn">
+							<label><input type="radio" onclick="setSendBy(this)" value="2" name="send_by" /> Postal Mail</label>
+							<span class="req"></span>
+						</div>
+						<div class="form-item cf email-field send-email" style="display: none;">
+							<label>Email</label>
+							<input type="text" value="" id="Notify_Email" maxlength="150" name="Notify_Email" />
+							<!--						<br /><label>Add a personal message</label>
+													<textarea id="Notify_Message" maxlength="255" name="Notify_Message" style="height: 120px"></textarea>-->
+						</div>
+						<div class="form-set cf notif" style="display: none;">
+							<div class="two-col cf">
+								<div class="form-item cf text-field odd">
+									<label>First Name</label>
+									<input type="text" value="" id="Notify_FName" maxlength="250" name="Notify_FName" />
+								</div>
+								<div class="form-item cf text-field even">
+									<label>Last Name</label>
+									<input type="text" value="" id="Notify_LName" maxlength="250" name="Notify_LName" />
+								</div>
+								<div class="form-item cf text-field odd">
+									<label>Address 1</label>
+									<input type="text" value="" id="Notify_Address1" maxlength="250" name="Notify_Address1" />
+								</div>
+								<div class="form-item cf text-field even">
+									<label>Address 2</label>
+									<input type="text" value="" id="Notify_Address2" maxlength="250" name="Notify_Address2" />
+								</div>
+								<div class="form-item cf text-field odd">
+									<label>City</label>
+									<input type="text" value="" id="Notify_City" maxlength="200" name="Notify_City" />
+								</div>
+								<div class="form-item cf select-field even">
+									<label>State / Province</label>
+									<input type="text" value="" id="Notify_State" maxlength="2" name="Notify_State" />
+								</div>
+								<div class="form-item cf text-field odd">
+									<label>Zip / Postal Code</label>
+									<input type="text" value="" id="Notify_Zip" maxlength="25" name="Notify_Zip" />
+								</div>
+							</div><!-- .two-col -->
+							<!--				<div class="form-item cf textarea even">
+												<label>Add a personal message</label>
+												<textarea id="message" name="message"></textarea>
+											</div>-->
+						</div><!-- .field-set -->
+					</div>
+				</div>
+			</section>
+
+			<section class="cf" id="billing-block">
+				<div class="form-set cf billing">
+					<h2>Billing Information</h2>
+					<div class="two-col cf">
+						<div class="form-item cf text-field odd">
+							<label>First Name</label>
+							<input type="text" id="fname" maxlength="150" name="fname" value="" />
+						</div>
+						<div class="form-item cf text-field even">
+							<label>Last Name <span class="req">*</span></label>
+							<input type="text" id="lname" maxlength="150" name="lname" value="" />
+						</div>
+						<div class="form-item cf text-field odd">
+							<label>Address 1 <span class="req">*</span></label>
+							<input type="text" id="address1" maxlength="255" name="address1" value="" />
+						</div>
+						<div class="form-item cf text-field even">
+							<label>Address 2</label>
+							<input type="text" id="address2" maxlength="255" name="address2" value="" />
+						</div>
+						<div class="form-item cf text-field odd">
+							<label>City <span class="req">*</span></label>
+							<input type="text" id="city" maxlength="100" name="city" value="" />
+						</div>
+						<div class="form-item cf select-field even">
+							<label>State / Province <span class="req">*</span></label>
+							<input type="text" id="state" maxlength="2" name="state" value="" />
+						</div>
+						<div class="form-item cf text-field odd">
+							<label>Zip / Postal Code <span class="req">*</span></label>
+							<input type="text" id="zip" maxlength="25" name="zip" value="" />
+						</div>
+						<div class="form-item cf text-field even">
+							<label>Email <span class="req">*</span></label>
+							<input type="text" id="email" maxlength="150" name="email" value="" />
+						</div>
+
+						<div class="form-item cf text-field odd">
+							<label>Phone <span class="req">*</span></label>
+							<input type="tel" id="phone" name="phone" value="" />
+						</div>
+						<div class="form-item cf text-field even">
+							<label>Organization </label>
+							<input type="text" id="organization" maxlength="150" name="organization" value="" />
+						</div>
+					</div>
+
+					<div class="form-item cf checkbox">
+						<label onclick="" for="updates">
+							<input type="checkbox" value="yes" id="updates" name="updates" /> Yes, I would like to receive email updates from the B+ Foundation.
+						</label>
+					</div>
+				</div><!-- .field-set -->
+			</section>
+
+			<section class="cf last" id="payment-block">
+				<div class="form-set cf payment">
+					<h2>Payment Information </h2>
+					<table style="width: 100%;">
+						<tr>
+							<td><img alt="credit cards" src="images/logos_cc.png" /></td>
+							<td style="text-align: right;"></td>
+						</tr>
+					</table>
+
+
+					<div class="two-col">
+
+						<div class="form-item cf text-field odd">
+							<label>Credit Card or Debit Card Number <span class="req">*</span></label>
+							<input type="text" id="acctnumber" maxlength="50" name="acctnumber" />
+						</div>
+						<div class="form-item cf select-field even expire">
+							<label>Expiration Date <span class="req">*</span></label>
+							<select id="expmonth" name="expmonth">
+								<option value="">Month</option>
+								<option value="01">01 - Jan</option>
+								<option value="02">02 - Feb</option>
+								<option value="03">03 - Mar</option>
+								<option value="04">04 - Apr</option>
+								<option value="05">05 - May</option>
+								<option value="06">06 - Jun</option>
+								<option value="07">07 - Jul</option>
+								<option value="08">08 - Aug</option>
+								<option value="09">09 - Sep</option>
+								<option value="10">10 - Oct</option>
+								<option value="11">11 - Nov</option>
+								<option value="12">12 - Dec</option>
+							</select>
+							<span class="expiremiddle">/</span>
+							<select id="expyear" name="expyear">
+								<option value="">Year</option>
+
+								<option value="18">2018</option>
+
+								<option value="19">2019</option>
+
+								<option value="20">2020</option>
+
+								<option value="21">2021</option>
+
+								<option value="22">2022</option>
+
+								<option value="23">2023</option>
+
+								<option value="24">2024</option>
+
+								<option value="25">2025</option>
+
+								<option value="26">2026</option>
+
+								<option value="27">2027</option>
+
+								<option value="28">2028</option>
+
+							</select>
+						</div>
+						<div class="form-item cf text-field odd csc" style="width: 100%; position: relative;">
+							<table cellpadding="0" cellspacing="0">
+								<tr>
+									<td style="width: 30%">
+										<label>Card Security Code <span class="req">*</span>&nbsp;<span class="whatsthis" onclick="showPopup(event, 'cvvinfo', true);">what's this</span></label>
+										<input type="text" id="cvv" maxlength="5" name="cvv" />
+									</td>
+								</tr>
+							</table>
+							<div id="cvvinfo" style="position: absolute; display: none;" onclick="showPopup(event, 'cvvinfo', false)">
+								<span style="font-size: 8pt;">The Card Security Code is the group of numbers immediately following your Visa, MasterCard, American Express and Discover credit card number. These numbers are used by your credit card company to help prevent fraud. This number is only used in processing your transaction and will not be recorded. Note: The digits are printed on your card, rather then stamped in the plastic like the digits in your credit card number. American Express has 4 digits on front of card, Visa, Mastercard and Discover have the 3 digits on back of card after the card number.</span>
+								<div style="position: absolute; right: 0px; bottom: 0px; width: 16px; height: 24px;"><span style="font-size: 12pt; font-weight: bold;">X</span></div>
+							</div>
+						</div>
+					</div><!-- .field-set -->
+				</div>
+			</section>
+
+			<section class="cf" id="howheard-block">
+				<div class="form-set cf how">
+					<h2>How did you hear about us?</h2>
+					<div class="form-item cf select-field howheard">
+						<select id="howheard" name="howheard" onclick="setHowHeard();">
+							<option value="-1" selected="selected">Select one </option>
+							<option value="1">Word of mouth </option>
+							<option value="2">Social media </option>
+							<option value="3">Google ad </option>
+							<option value="4">B+ event </option>
+							<option value="5">Other </option>
+						</select>
+					</div>
+					<div class="form-item cf text-field howheardother">
+						<input style="display: none; width: 15em;" type="text" id="howheard-other" maxlength="255" value="" placeholder="please specify..." name="howheard-other" />
+					</div>
+					<div><span class="req"></span></div>
+				</div>
+			</section>
+
+			<section class="cf last" id="button-block">
+				<div style="width: 100%; text-align: center;">
+					<input type="submit" value="DONATE NOW" name="submit" id="submit" class="donate-button" />
+				</div>
+				<div style="width: 100%; text-align: left;">
+					<p style="padding-top: 14pt; font-size: smaller;">To donate by check please make check payable to The B+ Foundation and mail to - The B+ Foundation, 101 Rockland Circle, Wilmington, DE, 19803.</p>
+				</div>
+			</section>
+			<!-- Load Facebook SDK for JavaScript -->
+			<div id="fb-root"></div>
+			<script>
+                                (function (d, s, id) {
+					var js, fjs = d.getElementsByTagName(s)[0];
+					if (d.getElementById(id)) return;
+					js = d.createElement(s); js.id = id;
+					js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+					fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));</script>
+
+			<!-- Your share button code -->
+			<div class="fb-share-button"
+				 data-href="https://www.your-domain.com/your-page.html"
+				 data-layout="button_count">
+			</div>
+
+			<section class="cf last" id="footer-block">
+				<p style="padding-top: 10pt; font-size: smaller;">Thank you for your donation. You will receive an email receipt upon completion. Please consider submitting a donation matching form with your employer. If you have any questions or would like more information on donating appreciated stock or estate planning, please contact us at 302.563.8389 or <a href="mailto:Joe@BePositive.org">Joe@BePositive.org</a>.</p>
+			</section>
+
+			<section>
+				<!-- GoDaddy Smart Icon tag. Do not edit. -->
+				<span id="siteseal">
+				<script type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=115783247506a37416510120b22a62e057e46942621805140"></script></span>
+				<!-- end GoDaddy Smart Icon tag -->
+			</section>
+		</form>
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-20771217-2', 'auto');
+  ga('create', 'UA-20771217-1', 'auto', 'donateSite', {'allowLinker':true});
+  ga('donateSite.require', 'linker');
+  ga('donateSite.linker:autoLink', ['bepositive.org']);
+
+  ga('send', 'pageview');
+  ga('donateSite.send', 'pageview');
+
+		</script>
+
+	</div>
+</body>
+</html>

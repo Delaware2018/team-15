@@ -11,10 +11,12 @@ public class leaderAdapter extends BaseAdapter {
     LayoutInflater mInflater;
     private static String[] names;
     private static String[] dollarDonations;
+    private static int[] ranks;
 
-    public leaderAdapter(Context context, String[] names, String[] dollarDonations){
+    public leaderAdapter(Context context, String[] names, String[] dollarDonations, int[] ranks){
         this.names=names;
         this.dollarDonations=dollarDonations;
+        this.ranks=ranks;
         mInflater=(LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
@@ -37,13 +39,15 @@ public class leaderAdapter extends BaseAdapter {
     @Override
     public View getView(int i, View convertView, ViewGroup parent) {
         View v=mInflater.inflate(R.layout.leader_list, null);
-        //references the fields in carlist_layout.xml
         TextView nameText=(TextView)v.findViewById(R.id.nameText);
         TextView dollarText=(TextView)v.findViewById(R.id.dollarText);
+        TextView rankText=(TextView)v.findViewById(R.id.rankText);
 
+        int ranksTemp=ranks[i];
         String nameTemp=names[i];
         String donationTemp=dollarDonations[i];
 
+        rankText.setText(Integer.toString(ranks[i]));
         nameText.setText(names[i]);
         dollarText.setText(dollarDonations[i]);
 

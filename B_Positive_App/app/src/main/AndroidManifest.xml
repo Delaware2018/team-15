@@ -45,12 +45,24 @@
             />
 
         <activity
+            android:name=".randomActivity"
+            android:label="B_Positive_App"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+
+        <activity
         android:name=".Thanks"
         android:label="B_Positive_App"
         android:theme="@style/AppTheme.NoActionBar"
         />
         <activity
             android:name=".Video"
+            android:label="B_Positive_App"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+
+        <activity
+            android:name=".surveyActivity"
             android:label="B_Positive_App"
             android:theme="@style/AppTheme.NoActionBar"
             />
